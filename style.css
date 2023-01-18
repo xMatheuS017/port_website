@@ -1,0 +1,204 @@
+
+body{    /*Alterando o fundo da página*/
+    text-align: center;          /* Colocando imagem de fundo*/
+    background: linear-gradient(
+        180deg,
+        rgba(194, 103, 194, 0.74) 0%,
+        rgb(102, 10, 87)20%,
+        rgba(194, 103, 194, 0.74) 100%
+    );
+}
+
+body{
+    background-image: url(icons/back.jpg);
+    background-size:auto;
+}
+
+
+/* FONTES */
+.treb{
+    font-family:'Trebuchet MS';
+}
+
+.cam{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.geo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* CONTEÚDO */
+
+.portada{
+    padding-top: 5px;
+    border-radius: 300px;
+}
+
+.index_logo{
+    font-size: 15px;
+}
+
+.index{
+    display: flex;
+    column-gap: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
+    justify-content: space-between;
+    color:black;
+    
+}
+
+
+.border_index{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    border: 2px solid rgb(0,0,0);
+    padding:20px;
+}
+
+.tabela_perfil{
+    width: 500px; height: 10px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    border: 2px solid rgb(0,0,0);
+    padding:20px;
+    text-align: center;
+    position:relative;
+    left: 650px;
+}
+
+.ensino_tab{
+    width: 500px; height: 100px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    border: 2px solid rgb(0,0,0);
+    padding:20px;
+    text-align: center;
+    position:relative;
+    left: 650px;
+}
+
+.idiomas{
+    width: 130px; height: 132px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    border: 2px solid rgb(0,0,0);
+    padding:20px;
+    text-align: center;
+    position:relative;
+    left: 850px;
+}
+
+.tabela_ti{
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0;
+    border-spacing: 10px;
+    display:flex;
+    width: 500px;   /* tamanho da tabela */
+    height: 320px;
+    background-color: white;
+    margin-left: 650px;
+    border-radius: 25px;
+    border: 2px solid rgb(0,0,0);
+
+}
+
+/* fazendo 2 colunas de 16px*/
+.coluna_ti{
+    flex:50%;
+    padding: 20px;
+    height: 200%;
+    
+}
+
+
+/* tamanho da barra */
+.detalhes{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.barra{
+    
+    position: relative;
+    border: 2px solid rgb(102,10,87);
+    border-radius: 20px;
+    
+}
+
+.barra div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color:        rgb(102, 10, 87);
+}
+
+.skills:not(:last-child){
+    margin-bottom: 20px;
+}
+
+#barra_html{
+    animation: html-fill 2s forwards;
+}
+
+#barra_css{
+    animation: css-fill 2s forwards;
+}
+
+#barra_js{
+    animation: js-fill 2s forwards;
+}
+
+#barra_python{
+    animation: python-fill 2s forwards;
+}
+
+#barra_sql{
+    animation: sql-fill 2s forwards;
+}
+
+#barra_react{
+    animation: react-fill 2s forwards;
+}
+
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes js-fill{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes python-fill {
+    100%{
+        width: 85%;
+    }
+}
+@keyframes sql-fill{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes react-fill {
+    100%{
+        width: 70%;
+    }
+}
+
+.personal_data{
+    padding-bottom: 1px;
+}
